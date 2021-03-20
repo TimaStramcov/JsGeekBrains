@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        function mathOper(a, b, operation) {
+            switch (operation) {
+                case 'сложение':
+                    return (a + b);
+
+
+                case 'вычитание':
+                    return (a - b);
+
+
+                case 'умножение':
+                    return (a * b);
+
+
+                case 'деление':
+                    return (a / b);
+
+                default:
+                    alert('Я не могу сделать это.');
+                    break;
+            }
+        }
+
+        let num1 = parseInt(prompt("введите первое число: "))
+        let num2 = parseInt(prompt("введите второе число: "))
+        let oper = prompt("выберите операцию: ")
+        let result = mathOper(num1, num2, oper);
+        alert(result);
+
+
+
+
+    </script>
+</body>
+
+</html>
